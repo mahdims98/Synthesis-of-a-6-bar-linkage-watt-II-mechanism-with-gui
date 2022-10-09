@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1480</width>
+    <height>857</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{font-family: &quot;Calibri&quot;;
+font-size:15px;
+}
+
+QCheckBox{color:#fafafa}
+
+QComboBox{background-color:#cfd8dc; border-radius:10px; color: #000000 }
+QComboBox::drop-down 
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+QComboBox::down-arrow {
+
+    width: 14px;
+    height: 14px;
+}
+
+
+
+.QMainWindow{background-color:#cfd8dc;}
+
+QGroupBox{background-color:#094869;
+
+border-radius:10px;}
+
+
+
+QSpinBox{background-color:#cfd8dc; border-radius:3px;color:black;}
+QSpinBox::drop-down 
+{
+
+    border: 1px; /* This seems to replace the whole arrow of the combo box */
+}
+QSpinBox::down-arrow {
+
+    width: 14px;
+    height: 14px;
+}
+QSpinBox::up-arrow {
+
+    width: 14px;
+    height: 14px;
+
+}
+QSpinBox::disabled{ background-color:#e0e0e0;; border-radius:3px;color: #455A64;}
+
+
+QDoubleSpinBox{background-color:#cfd8dc;; border-radius:3px;color: #000000;}
+QDoubleSpinBox::drop-down 
+{
+    border: 1px; /* This seems to replace the whole arrow of the combo box */
+}
+QDoubleSpinBox::down-arrow {
+
+
+    width: 14px;
+    height: 14px;
+}
+QDoubleSpinBox::up-arrow {
+
+    width: 14px;
+    height: 14px;
+
+}
+QDoubleSpinBox::disabled{ background-color:#e0e0e0;; border-radius:3px;color: #455A64;}
+
+QLineEdit{background-color:#cfd8dc; border-radius:3px;color: #000000}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea_3">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1458</width>
+         <height>788</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QGroupBox" name="groupBox_inputs">
+            <property name="minimumSize">
+             <size>
+              <width>350</width>
+              <height>500</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{font-family: &quot;Calibri&quot;;
+font-size:15px;
+color:#fafafa;
+}</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="leftMargin">
+              <number>20</number>
+             </property>
+             <property name="rightMargin">
+              <number>20</number>
+             </property>
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="12" column="3">
+              <widget class="QLabel" name="label_19">
+               <property name="text">
+                <string>Anim.  Speed:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Alpha</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="3">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Repeats:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="1">
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_steps">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="accelerated">
+                <bool>true</bool>
+               </property>
+               <property name="maximum">
+                <double>100000.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.010000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.100000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Vector 3</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="0" colspan="5">
+              <widget class="Line" name="line">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Vector 5</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0" colspan="5">
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="4">
+              <widget class="QSpinBox" name="spinBox_animation_speed">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+               <property name="value">
+                <number>20</number>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Steps:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_2">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Length</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Omega</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Vector 4'</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_3">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Angle</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="1">
+              <widget class="QSpinBox" name="spinBox_export_step">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="value">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Vector 4</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Vector 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>Export step</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Vector 6</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Vector 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Vector 1'</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="4">
+              <widget class="QSpinBox" name="spinBox_repeats">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="sizeIncrement">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="accelerated">
+                <bool>true</bool>
+               </property>
+               <property name="maximum">
+                <number>10000000</number>
+               </property>
+               <property name="value">
+                <number>3600</number>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="2">
+              <widget class="QPushButton" name="pushButton_start">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+.QPushButton{background-color:#094869;
+color: #fafafa;
+ border:4px solid #1e88e5; border-radius: 20px;}
+.QPushButton:hover{background-color:#1e88e5;}
+.QPushButton:disabled{background-color:#757575; border:4px solid #757575;}
+</string>
+               </property>
+               <property name="text">
+                <string>Start</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_animation">
+            <property name="minimumSize">
+             <size>
+              <width>700</width>
+              <height>500</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{font-family: &quot;Calibri&quot;;
+font-size:15px;
+color:#fafafa;
+}</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="1" column="0">
+              <widget class="QGraphicsView" name="graphicsView_link_2">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>Link 5</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QGraphicsView" name="graphicsView_link_4"/>
+             </item>
+             <item row="3" column="1">
+              <widget class="QGraphicsView" name="graphicsView_link_5"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QGraphicsView" name="graphicsView_link_3"/>
+             </item>
+             <item row="5" column="0">
+              <widget class="QGraphicsView" name="graphicsView_link_6"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_20">
+               <property name="text">
+                <string>Link 4</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>Link 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="text">
+                  <string>Draw FBD For Theta =</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="doubleSpinBox_fbd_angle">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>80</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="accelerated">
+                  <bool>true</bool>
+                 </property>
+                 <property name="maximum">
+                  <double>360.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>10.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>Link 3</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>Link 6 </string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1480</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
