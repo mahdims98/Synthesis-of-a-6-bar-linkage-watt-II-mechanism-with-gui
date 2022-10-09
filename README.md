@@ -7,10 +7,10 @@ kinematic and dynamic analysis of a 6 bar linkage watt II mechanism
 # GUI
 ### Kinematics (with animations)
 
-![kinematics](/images/kinematics.png "kinematics")
+![kinematics](/Images/kinematics.png "kinematics")
 
 ### Dynamics (free body diagrams)
-![Dynamics](/images/Dynamics.png "Dynamics")
+![Dynamics](/Images/Dynamics.png "Dynamics")
 
 
 ## Built With
